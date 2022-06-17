@@ -1,0 +1,44 @@
+# jemdoc: menu{MENU}{publications.html}
+= Publications
+
+== Journal Papers
+- Energy-efficient transmission schedule for delay-limited bursty data arrivals under non-ideal circuit power consumption
+	-- *Z. Nan*, [https://chentianyi1991.github.io/index.html T. Chen], X. Wang, and W. Ni
+	-- /IEEE Transactions on Vehicular Technology/, vol. 65, no. 8, pp. 6588–6600, Aug. 2016.
+
+- Optimal MIMO broadcasting for energy harvesting transmitter with non-ideal circuit power consumption
+	-- X. Wang, *Z. Nan*, and [https://chentianyi1991.github.io/index.html T. Chen]
+	-- /IEEE Transactions Wireless Communications/, vol. 14, no. 5, pp. 2500–2512, May 2015.
+
+== Conference Papers
+- Cramer-Rao lower bounds of joint time delay and Doppler-stretch estimation with random stepped-frequency signals
+	-- *Z. Nan*, T. Zhao, and T. Huang
+	-- /IEEE DSP/, Beijing, China, Oct. 2016.
+
+- Performance analysis of joint time delay and Doppler-stretch estimation with random stepped-frequency signals
+	-- T. Zhao, *Z. Nan*, and T. Huang
+	-- /IEEE DSP/, Beijing, China, Oct. 2016.
+
+- Optimal transmission policy for energy-harvesting pow- ered MIMO multi-access channels
+	-- W. Li, *Z. Nan*, and X. Wang
+	-- /IEEE ICCC/, Shanghai, China, Oct. 2014.
+
+- Energy-efficient transmission of delay-limited bursty data packets over time-varying channels under non-ideal circuit power
+	-- *Z. Nan*, T. Chen, and X. Wang
+	-- /IEEE ChinaSIP/, Xi’ an, China, Jul. 2014.
+
+- Energy-efficient transmission of delay-limited bursty data packets under non-ideal circuit power consumption
+	-- *Z. Nan* and X. Wang
+	-- /IEEE ICC/, Sydney, Australia, Jun. 2014.
+
+- Optimal MIMO broadcasting for energy harvesting transmitter with non-ideal circuit power
+	-- X. Wang and *Z. Nan*
+	-- /IEEE ICC/, Sydney, Australia, Jun. 2014.
+
+- Optimal MIMO broadcasting over time-varying wire- less channels for energy harvesting transmitter with non-ideal circuit power
+	-- *Z. Nan*, T. Chen, and X. Wang
+	-- /IEEE ICASSP/, Florence, Italy, May 2014.
+
+- An optimization approach to energy-efficient transmissions with strict deadlines
+	-- X. Wang and *Z. Nan*
+	-- /IEEE WCNC/, Shanghai, China, Apr. 2013.

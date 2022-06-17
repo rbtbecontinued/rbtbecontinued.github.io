@@ -1,0 +1,15 @@
+# jemdoc: menu{MENU}{experience.html}
+= Experience
+
+== Working Experience
+- \[2018.06 - 2021.08\] Ride-Hailing Business Unit, Meituan, Beijing, China
+	-- *Algorithm Engineer*
+	-- Driver behavior modeling & Operation strategy design
+		--- Applying machine learning and causal inference methods to model drivers’ behaviors under incentives;
+		--- Designing optimal incentive schemes with linear programming and robust optimization.
+	-- Natural language processing
+
+- \[2015.07 - 2018.06\] Radar Research AVIC, Beijing, China
+	-- *Researcher*
+	-- Signal recognition algorithims for electronic warfare
+	-- Performance analysis of low intercept radar

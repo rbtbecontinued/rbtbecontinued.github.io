@@ -1,0 +1,37 @@
+# jemdoc: menu{MENU}{index.html}
+# jemdoc: title{Zheng NAN 南征}
+= Zheng NAN
+
+~~~
+{}{img_left}{profile.jpg}{alt text}{150}{200}{}
+
+Ph.D. Student \n
+[https://www.unsw.edu.au/engineering/our-schools/electrical-engineering-telecommunications School of Electrical Engineering and Telecommunications] \n
+[https://www.unsw.edu.au/ UNSW SYDNEY] \n
+
+Room 447, Building G17 \n
+UNSW SYDNEY 2052 \n
+Tel: (+61)423219602 \n
+Email: zheng.nan@unsw.edu.au \n
+
+[https://scholar.google.com.au/citations?hl=zh-CN&user=iuyHfXEAAAAJ Google Scholar]
+~~~
+
+
+== About Me
+~~~
+I am now working toward my Ph.D. degree with the School of Electrical Engineering and Telecommunications, UNSW, Sydney. \nMy background is in communications and signal processing. I received the M.Eng.Sc. degree from Fudan University, Shanghai \nin 2015, under the supervision of [https://scholar.google.com/citations?user=bQBku50AAAAJ Prof. Xin Wang]. Before I started my Ph.D., I was a Researcher with the Radar Research AVIC, \nBeijing (2015–2018), and an Algorithm Engineer with the Ride-Hailing Business Unit, Meituan, Beijing (2018–2021).
+
+My current research interests lie in *signal processing*, *machine learning*, and *graph theory*.
+
+I am fortunate to be advised by [https://scholar.google.com/citations?user=gsx__zkAAAAJ Dr. Vidhyasaharan Sethu], [https://scholar.google.com.au/citations?hl=en&user=Sb1Pj4sAAAAJ Dr. Ting Dang], and [https://scholar.google.com/citations?user=crMO9PcAAAAJ&hl=en Dr. Beena Ahmed].
+~~~
+
+
+== Education
+~~~
+- [https://www.unsw.edu.au/ University of New South Wales], Sydney, Australia: Ph.D., Electrical Engineering, 2021.07 -
+- [https://www.fudan.edu.cn/en/ Fudan University], Shanghai, China: M.S., Communication and Information Systems, 2012.09 - 2015.07
+- [https://english.bit.edu.cn/ Beijing Institute of Technology], Beijing, China: B.S., Communication Engineering, 2008.09 - 2012.06
+~~~
+
