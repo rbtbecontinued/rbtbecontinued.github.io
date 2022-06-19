@@ -1,6 +1,7 @@
 # jemdoc: menu{MENU}{index.html}
 # jemdoc: title{Zheng NAN 南征}
 {{<link rel="shortcut icon" href="icon.png" />}}
+{{<body style="width:1000px">}}
 = Zheng NAN
 
 ~~~
@@ -21,7 +22,7 @@ Email: zheng.nan@unsw.edu.au \n
 
 == About Me
 ~~~
-I am now working toward my Ph.D. degree with the School of Electrical Engineering and Telecommunications, UNSW, Sydney. \nMy background is in communications and signal processing. I received the M.Eng.Sc. degree from Fudan University, Shanghai \nin 2015, under the supervision of [https://scholar.google.com/citations?user=bQBku50AAAAJ Prof. Xin Wang]. Before I started my Ph.D., I was a Researcher with the Radar Research AVIC, \nBeijing (2015–2018), and an Algorithm Engineer with the Ride-Hailing Business Unit, Meituan, Beijing (2018–2021).
+I am now working toward my Ph.D. degree with the School of Electrical Engineering and Telecommunications, UNSW, Sydney. My background is in communications and signal processing. Prior to I starting my Ph.D., I received the M.Eng.Sc. degree from Fudan University, Shanghai in 2015, under the supervision of [https://scholar.google.com/citations?user=bQBku50AAAAJ Prof. Xin Wang]. I was also a Researcher with the Radar Research AVIC, Beijing from July 2015 to June 2018, and an Algorithm Engineer with the Ride-Hailing Business Unit, Meituan, Beijing from June 2018 to August 2021.
 
 My current research interests lie in *signal processing*, *machine learning*, and *graph theory*.
 
