@@ -11,6 +11,14 @@
 	-- /IEEE Transactions Wireless Communications/, vol. 14, no. 5, pp. 2500–2512, May 2015.
 
 == Conference Papers
+- Variational connectionist temporal classification for order-preserving sequence modeling
+	-- *Z. Nan*, T. Dang, V. Sethu, B. Ahmed
+	-- /IEEE ICASSP/, Seoul, Korea, Apr. 2024.
+
+- Improving wav2vec2-based spoken language identification by learning phonological features
+	-- M. Shahin, *Z. Nan*, V. Sethu, B. Ahmed
+	-- /INTERSPEECH/, Dublin, Ireland, Aug. 2023.
+
 - Cramer-Rao lower bounds of joint time delay and Doppler-stretch estimation with random stepped-frequency signals
 	-- *Z. Nan*, T. Zhao, and T. Huang
 	-- /IEEE DSP/, Beijing, China, Oct. 2016.
@@ -42,3 +50,9 @@
 - An optimization approach to energy-efficient transmissions with strict deadlines
 	-- X. Wang and *Z. Nan*
 	-- /IEEE WCNC/, Shanghai, China, Apr. 2013.
+
+== Preprints
+- Weighted sum-throughput maximization for energy harvesting powered MIMO multi-access channels
+	-- *Z. Nan*, W. Li
+	-- [https://arxiv.org/pdf/1709.09627.pdf arXiv:2309.11983]
+
