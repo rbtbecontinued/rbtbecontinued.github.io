@@ -1,64 +1,514 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link rel="icon" href="school.ico" type="image/x-icon" />
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Zheng NAN 南征</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zheng NAN | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f9fafb; color: #1f2937; }
+        .nav-link { transition: all 0.2s; border-bottom: 2px solid transparent; cursor: pointer; }
+        .nav-link.active { border-bottom: 2px solid #2563eb; color: #2563eb; font-weight: 600; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; animation: fadeIn 0.3s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
 </head>
-<body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-category">Menu</div>
-<div class="menu-item"><a href="index.html" class="current">Home</a></div>
-<div class="menu-item"><a href="research.html">Research</a></div>
-<div class="menu-item"><a href="publications.html">Publications</a></div>
-<div class="menu-item"><a href="experience.html">Experience</a></div>
-</td>
-<td id="layout-content">
-<p><link rel="shortcut icon" href="icon.png" /></p>
-<p><body style="width:1000px"></p>
-<h1>Zheng NAN</h1>
-<table class="imgtable"><tr><td>
-<img src="profile.jpg" alt="alt text" width="150px" height="200px" />&nbsp;</td>
-<td align="left"><p>Ph.D. Candidate <br />
-<a href="https://www.unsw.edu.au/engineering/our-schools/electrical-engineering-telecommunications">School of Electrical Engineering and Telecommunications</a> <br />
-<a href="https://www.unsw.edu.au/">UNSW SYDNEY</a> <br /></p>
-<p>Room 447, Building G17 <br />
-UNSW SYDNEY 2052 <br />
-Tel: (+61)423219602 <br />
-Email: zheng.nan@unsw.edu.au <br /></p>
-<p><a href="https://scholar.google.com.au/citations?hl=zh-CN&amp;user=iuyHfXEAAAAJ">Google Scholar</a></p>
-</td></tr></table>
-<h2>About Me</h2>
-<div class="infoblock">
-<div class="blockcontent">
-<p>I am now working toward my Ph.D. degree with the School of Electrical Engineering and Telecommunications, UNSW, Sydney. My background is in communications and signal processing. Prior to I starting my Ph.D., I received the M.Eng.Sc. degree from Fudan University, Shanghai in 2015, under the supervision of <a href="https://scholar.google.com/citations?user=bQBku50AAAAJ">Prof. Xin Wang</a>. I was also a Researcher with the Radar Research AVIC, Beijing from July 2015 to June 2018, and an Algorithm Engineer with the Ride-Hailing Business Unit, Meituan, Beijing from June 2018 to August 2021.</p>
-<p>My current research interests lie in <b>signal processing</b>, <b>machine learning</b>, and <b>graph theory</b>.</p>
-<p>I am fortunate to be advised by <a href="https://scholar.google.com/citations?user=gsx__zkAAAAJ">A/Prof. Vidhyasaharan Sethu</a>, <a href="https://scholar.google.com.au/citations?hl=en&amp;user=Sb1Pj4sAAAAJ">Dr. Ting Dang</a>, and <a href="https://scholar.google.com/citations?user=crMO9PcAAAAJ&amp;hl=en">A/Prof. Beena Ahmed</a>.</p>
-</div></div>
-<h2>Education</h2>
-<div class="infoblock">
-<div class="blockcontent">
-<ul>
-<li><p><a href="https://www.unsw.edu.au/">University of New South Wales</a>, Sydney, Australia: Ph.D., Electrical Engineering, 2021.07 -</p>
-</li>
-<li><p><a href="https://www.fudan.edu.cn/en/">Fudan University</a>, Shanghai, China: M.S., Communication and Information Systems, 2012.09 - 2015.07</p>
-</li>
-<li><p><a href="https://english.bit.edu.cn/">Beijing Institute of Technology</a>, Beijing, China: B.S., Communication Engineering, 2008.09 - 2012.06</p>
-</li>
-</ul>
-</div></div>
-<div id="footer">
-<div id="footer-text">
-Page generated 2023-12-19 15:51:24 CST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
-</div>
-</div>
-</td>
-</tr>
-</table>
+
+
+<body class="py-10 px-4 flex flex-col min-h-screen">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div class="md:col-span-1">
+            <div class="sticky top-10 text-center md:text-left">
+                <img src="profile.jpg" 
+                     alt="Zheng NAN" 
+                     style="object-position: center 18%;" 
+                     class="w-full aspect-square rounded-2xl mx-auto md:mx-0 shadow-sm border border-gray-100 mb-6 object-cover">
+
+                <h1 class="text-3xl font-bold text-gray-900">Zheng NAN</h1>
+                <p class="text-blue-600 font-medium mt-2 text-sm">Postdoctoral Fellow,</p>
+                <p class="text-blue-600 font-medium mt-2 text-sm">School of Electrical Engineering and Telecommunications,</p>
+                <p class="text-blue-600 font-medium mt-2 text-sm">University of New South Wales</p>
+                
+                <div class="mt-6 space-y-3 text-sm text-gray-600">
+                    <div class="flex items-center gap-3 justify-center md:justify-start">
+                        <i class="fa-solid fa-envelope w-4"></i> zheng.nan@unsw.edu.au
+                    </div>
+                    <div class="flex items-center gap-3 justify-center md:justify-start">
+                        <i class="fa-solid fa-location-dot w-4"></i> Room 447, EE&T Building (G17), UNSW Sydney 2052 
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-6 border-t border-gray-100 flex items-center gap-4 justify-center md:justify-start">
+                    <a href="https://www.linkedin.com/in/zheng-nan-6a306551/" target="_blank" 
+                       class="text-gray-400 hover:text-blue-700 transition-colors text-xl" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=iuyHfXEAAAAJ&hl=en" target="_blank" 
+                       class="text-gray-400 hover:text-blue-600 transition-colors text-xl" title="Google Scholar">
+                        <i class="fa-brands fa-google-scholar"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:col-span-3">
+            <nav class="flex space-x-8 border-b border-gray-200 mb-8 overflow-x-auto">
+                <button onclick="openTab(event, 'bio')" class="nav-button nav-link active pb-3 px-1 whitespace-nowrap">Bio</button>
+                <button onclick="openTab(event, 'research')" class="nav-button nav-link pb-3 px-1 whitespace-nowrap">Research</button>
+                <button onclick="openTab(event, 'publications')" class="nav-button nav-link pb-3 px-1 whitespace-nowrap">Publications</button>
+                <button onclick="openTab(event, 'people')" class="nav-button nav-link pb-3 px-1 whitespace-nowrap">People</button>
+                <button onclick="openTab(event, 'experience')" class="nav-button nav-link pb-3 px-1 whitespace-nowrap">Experience</button>
+            </nav>
+
+
+            <div id="bio" class="tab-content active">
+                <div class="space-y-12">
+                    <section>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                            <span class="w-1.5 h-8 bg-blue-600 rounded-full"></span>
+                            About Me
+                        </h2>
+                        <div class="prose prose-blue text-gray-600 max-w-none leading-relaxed space-y-6">
+                            <p>I am currently a Postdoctoral Fellow at the School of Electrical Engineering and Telecommunications, UNSW Sydney. My professional background spans both academia and industry. Prior to my PhD, I worked as a Researcher at the Radar and Electronic Equipment Research Institute, AVIC, Beijing, and as an Algorithm Engineer in the Ride-hailing Business Unit of Meituan, Beijing.</p>
+                            <p>With a solid background in signal processing and machine learning, I have applied my expertise to a range of engineering problems. My recent research focuses on machine learning, speech signal processing, and sequence modeling.</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                            <span class="w-1.5 h-8 bg-blue-600 rounded-full"></span>
+                            Education
+                        </h2>
+                        <div class="grid grid-cols-1 gap-4">
+                            <div class="flex items-start p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                                <div class="flex-shrink-0 mt-1 text-blue-600 text-lg mr-4"><i class="fa-solid fa-graduation-cap"></i></div>
+                                <div class="flex-grow">
+                                    <div class="flex justify-between items-start gap-4">
+                                        <h4 class="font-bold text-gray-900 text-lg leading-snug">University of New South Wales, Sydney, Australia</h4>
+                                        <span class="text-sm font-medium text-gray-400 tabular-nums whitespace-nowrap mt-1">2021.07 - 2025.06</span>
+                                    </div>
+                                    <p class="text-gray-600 font-medium">PhD</p>
+                                    <p class="text-sm text-gray-500 mt-1">Under supervision of <a href="https://www.unsw.edu.au/staff/vidhyasaharan-sethu" target="_blank" class="text-blue-500 hover:underline">A/Prof. Vidhyasaharan Sethu</a>, <a href="https://tingdang90.github.io/index.html" target="_blank" class="text-blue-500 hover:underline">Dr. Ting Dang</a>, and <a href="https://www.unsw.edu.au/staff/beena-ahmed" target="_blank" class="text-blue-500 hover:underline">A/Prof. Beena Ahmed</a></p>
+                                </div>
+                            </div>
+                            <div class="flex items-start p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                                <div class="flex-shrink-0 mt-1 text-gray-400 text-lg mr-4"><i class="fa-solid fa-graduation-cap"></i></div>
+                                <div class="flex-grow">
+                                    <div class="flex justify-between items-start gap-4">
+                                        <h4 class="font-bold text-gray-900 text-lg leading-snug">Fudan University, Shanghai, China</h4>
+                                        <span class="text-sm font-medium text-gray-400 tabular-nums whitespace-nowrap mt-1">2012.09 - 2015.06</span>
+                                    </div>
+                                    <p class="text-gray-600 font-medium">M.Eng.Sc. in Communication and Information Systems</p>
+                                    <p class="text-sm text-gray-500 mt-1">Under supervision of <a href="http://www.it.fudan.edu.cn/Data/View/1052" target="_blank" class="text-blue-500 hover:underline">Prof. Xin Wang</a></p>
+                                </div>
+                            </div>
+                            <div class="flex items-start p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                                <div class="flex-shrink-0 mt-1 text-gray-400 text-lg mr-4"><i class="fa-solid fa-graduation-cap"></i></div>
+                                <div class="flex-grow">
+                                    <div class="flex justify-between items-start gap-4">
+                                        <h4 class="font-bold text-gray-900 text-lg leading-snug">Beijing Institute of Technology, Beijing, China</h4>
+                                        <span class="text-sm font-medium text-gray-400 tabular-nums whitespace-nowrap mt-1">2008.09 - 2012.06</span>
+                                    </div>
+                                    <p class="text-gray-600 font-medium">B.Eng. in Communication Engineering</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+            <div id="research" class="tab-content">
+                <h2 class="text-2xl font-bold mb-6">Research</h2>
+                <div class="space-y-8">
+                    <div class="bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow overflow-hidden w-full">
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">Integrated Speech Annotation and Analysis Framework</h3>
+                            <ul class="space-y-3 text-sm text-gray-600 list-disc list-outside ml-5 leading-relaxed">
+                                <li>Develop advanced models and algorithms to support diverse speech processing tasks.</li>
+                                <li>Build a model-assisted annotation workflow to improve efficiency of large-scale speech data annotation.</li>
+                                <li>Develop an integrated platform that unifies model-assisted annotation, data management, and analytical tools.</li>
+                            </ul>
+                            <div class="mt-6 flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-green-50 text-green-600 text-[10px] font-bold uppercase tracking-widest rounded-md">Voice Activity Detection</span>
+                                <span class="px-3 py-1 bg-green-50 text-green-600 text-[10px] font-bold uppercase tracking-widest rounded-md">Speech Diarization</span>
+                                <span class="px-3 py-1 bg-green-50 text-green-600 text-[10px] font-bold uppercase tracking-widest rounded-md">Speech Recognition</span>
+                            </div>
+                        </div>
+                        <div class="w-full bg-gray-50 flex items-center justify-center border-t border-gray-100">
+                            <img src="research_speech_annotation_and_analysis.png" alt="Speech Analysis Tool" class="w-full h-auto object-contain hover:scale-[1.01] transition-transform duration-500">
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow overflow-hidden w-full">
+                        <div class="flex flex-col md:flex-row items-stretch">
+                            <div class="md:w-1/2 bg-gray-50 flex-shrink-0 min-h-[260px] md:h-auto border-b md:border-b-0 md:border-r border-gray-100">
+                                <img src="research_diffusion_model.png" alt="Diffusion Model Research" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-8 md:w-1/2 flex flex-col justify-center">
+                                <h3 class="text-xl font-bold text-gray-900 mb-4">Non-Autoregressive Generative Sequence Modeling</h3>
+                                <ul class="space-y-3 text-sm text-gray-600 list-disc list-outside ml-5 leading-relaxed">
+                                    <li>Analyze generative capabilities of diffusion models for time series generation from time and frequency perspectives.</li>
+                                    <li>Develop conditioned diffusion models for time series forecasting (e.g., energy usage forecasting).</li>
+                                </ul>
+                                <div class="mt-6 flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-purple-50 text-purple-600 text-[10px] font-bold uppercase tracking-widest rounded-md">Diffusion Model</span>
+                                    <span class="px-3 py-1 bg-purple-50 text-purple-600 text-[10px] font-bold uppercase tracking-widest rounded-md">Time Series Analysis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow overflow-hidden w-full">
+                        <div class="w-full bg-gray-50 flex items-center justify-center border-b border-gray-50">
+                            <img src="research_speech_recognition.png" alt="Biologically-Inspired Approaches" class="w-full h-auto object-contain hover:scale-[1.01] transition-transform duration-500">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">Biologically-Inspired Approaches to Speech Recognition</h3>
+                            <ul class="space-y-3 text-sm text-gray-600 list-disc list-outside ml-5 leading-relaxed">
+                                <li>Explore modeling techniques of biological mechanisms essential for human speech recognition.</li>
+                                <li>Incorporate into existing speech recognition systems.</li>
+                                <li>Bridge the gap between artificial technologies and human cognitive capabilities.</li>
+                            </ul>
+                            <div class="mt-6 flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-[10px] font-bold uppercase tracking-widest rounded-md">Speech Recognition</span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-600 text-[10px] font-bold uppercase tracking-widest rounded-md">Bayesian Deep Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="publications" class="tab-content">
+                <h2 class="text-2xl font-bold mb-4">Publications</h2>
+                <p class="mb-6">For a more up-to-date list of publications, see <a href="https://scholar.google.com/citations?user=iuyHfXEAAAAJ&hl=en" target="_blank" class="text-blue-500 hover:underline">Google Scholar</a>.</p>
+
+                <div class="space-y-6">
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-900 font-semibold text-lg">AusKidTalk: developing transcription guidelines for continuous Australian English child speech</p>
+                        <p class="text-sm text-gray-600 mt-1">T. Szalay, <b>Z. Nan</b>, R. Huang, M. Shahin, T. Sirojan, K. Ballard, & B. Ahmed</p>
+                        <p class="text-sm italic text-blue-600 mt-1">Language Resources and Evaluation Conference (LREC), 2026</p>
+                    </div>
+
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-900 font-semibold text-lg">AusKidTalk: using strategic data collection and out-of-domain tools to semi-automate novel corpora annotation</p>
+                        <p class="text-sm text-gray-600 mt-1">T. Szalay, M. Shahin, T. Sirojan, <b>Z. Nan</b>, R. Huang, K. Ballard, & B. Ahmed</p>
+                        <p class="text-sm italic text-blue-600 mt-1">Interspeech, 2025</p>
+                    </div>
+
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-900 font-semibold text-lg">Underwater diver communication system based on speech/text conversion</p>
+                        <p class="text-sm text-gray-600 mt-1">Y. Rong, P. Chen, & <b>Z. Nan</b></p>
+                        <p class="text-sm italic text-blue-600 mt-1">IEEE OCEANS, 2025</p>
+                    </div>
+
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-900 font-semibold text-lg">AusKidTalk: developing an orthographic annotation workflow for a speech corpus of Australian English-speaking children</p>
+                        <p class="text-sm text-gray-600 mt-1">T. O. Szalay, M. Shahin, T. Sirojan, <b>Z. Nan</b>, R. Huang, J. Arciuli, E. Baker, F. Cox, K. J. Ballard, & B. Ahmed</p>
+                        <p class="text-sm italic text-gray-500 mt-1">Available at SSRN 5020250</p>
+                    </div>
+
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-900 font-semibold text-lg">A joint spectro-temporal relational thinking based acoustic modeling framework</p>
+                        <p class="text-sm text-gray-600 mt-1"><b>Z. Nan</b>, T. Dang, V. Sethu, & B. Ahmed</p>
+                        <p class="text-sm italic text-gray-500 mt-1">ArXiv Preprint ArXiv:2409.15357</p>
+                    </div>
+
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-900 font-semibold text-lg">Variational connectionist temporal classification for order-preserving sequence modeling</p>
+                        <p class="text-sm text-gray-600 mt-1"><b>Z. Nan</b>, T. Dang, V. Sethu, & B. Ahmed</p>
+                        <p class="text-sm italic text-blue-600 mt-1">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2024</p>
+                    </div>
+
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-900 font-semibold text-lg">Improving wav2vec2-based spoken language identification by learning phonological features</p>
+                        <p class="text-sm text-gray-600 mt-1">M. Shahin, <b>Z. Nan</b>, V. Sethu, & B. Ahmed</p>
+                        <p class="text-sm italic text-blue-600 mt-1">INTERSPEECH, 2023</p>
+                    </div>
+
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-900 font-semibold text-lg">Weighted sum-throughput maximization for energy harvesting powered MIMO multi-access channels</p>
+                        <p class="text-sm text-gray-600 mt-1"><b>Z. Nan</b> & W. Li</p>
+                        <p class="text-sm italic text-gray-500 mt-1">ArXiv Preprint ArXiv:1709.09627</p>
+                    </div>
+
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-900 font-semibold text-lg">Cramer-Rao lower bounds of joint time delay and Doppler-stretch estimation with random stepped-frequency signals</p>
+                        <p class="text-sm text-gray-600 mt-1"><b>Z. Nan</b>, T. Zhao, & T. Huang</p>
+                        <p class="text-sm italic text-blue-500 mt-1">IEEE International Conference on Digital Signal Processing (DSP), 2016</p>
+                    </div>
+
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-900 font-semibold text-lg">Performance analysis of joint time delay and Doppler-stretch estimation with random stepped-frequency signals</p>
+                        <p class="text-sm text-gray-600 mt-1">T. Zhao, <b>Z. Nan</b>, & T. Huang</p>
+                        <p class="text-sm italic text-blue-500 mt-1">IEEE International Conference on Digital Signal Processing (DSP), 2016</p>
+                    </div>
+
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-900 font-semibold text-lg">Energy-efficient transmission schedule for delay-limited bursty data arrivals under nonideal circuit power consumption</p>
+                        <p class="text-sm text-gray-600 mt-1"><b>Z. Nan</b>, T. Chen, X. Wang, & W. Ni</p>
+                        <p class="text-sm italic text-blue-500 mt-1">IEEE Transactions on Vehicular Technology, 2015</p>
+                    </div>
+
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-900 font-semibold text-lg">Optimal MIMO broadcasting for energy harvesting transmitter with non-ideal circuit power consumption</p>
+                        <p class="text-sm text-gray-600 mt-1">X. Wang, <b>Z. Nan</b>, & T. Chen</p>
+                        <p class="text-sm italic text-blue-500 mt-1">IEEE Transactions on Wireless Communications, 2015</p>
+                    </div>
+
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-900 font-semibold text-lg">Optimal transmission policy for energy-harvesting powered MIMO multi-access channels</p>
+                        <p class="text-sm text-gray-600 mt-1">W. Li, <b>Z. Nan</b>, X. Wang, & X. Zhou</p>
+                        <p class="text-sm italic text-blue-500 mt-1">IEEE/CIC International Conference on Communications in China (ICCC), 2014</p>
+                    </div>
+
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-900 font-semibold text-lg">Energy-efficient transmission of delay-limited bursty data packets over time-varying channels under non-ideal circuit power</p>
+                        <p class="text-sm text-gray-600 mt-1"><b>Z. Nan</b>, T. Chen, X. Wang</p>
+                        <p class="text-sm italic text-blue-500 mt-1">IEEE China Summit & International Conference on Signal and Information Processing (ChinaSIP), 2014</p>
+                    </div>
+
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-900 font-semibold text-lg">Energy-efficient transmission of delay-limited bursty data packets under non-ideal circuit power consumption</p>
+                        <p class="text-sm text-gray-600 mt-1"><b>Z. Nan</b>, X. Wang, & W. Ni</p>
+                        <p class="text-sm italic text-blue-500 mt-1">IEEE International Conference on Communications (ICC), 2014</p>
+                    </div>
+
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-900 font-semibold text-lg">Optimal MIMO broadcasting for energy harvesting transmitter with non-ideal circuit power</p>
+                        <p class="text-sm text-gray-600 mt-1">X. Wang & <b>Z. Nan</b></p>
+                        <p class="text-sm italic text-blue-500 mt-1">IEEE International Conference on Communications (ICC), 2014</p>
+                    </div>
+
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-900 font-semibold text-lg">Optimal MIMO broadcasting over time-varying wireless channels for energy harvesting transmitter with non-ideal circuit power</p>
+                        <p class="text-sm text-gray-600 mt-1"><b>Z. Nan</b>, T. Chen, & X. Wang</p>
+                        <p class="text-sm italic text-blue-500 mt-1">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2014</p>
+                    </div>
+
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-900 font-semibold text-lg">An optimization approach to energy-efficient transmissions with strict deadlines</p>
+                        <p class="text-sm text-gray-600 mt-1">X. Wang & <b>Z. Nan</b></p>
+                        <p class="text-sm italic text-blue-500 mt-1">IEEE Wireless Communications and Networking Conference (WCNC), 2013</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="people" class="tab-content">
+                <div class="space-y-12">
+                    <section>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                            <span class="w-1.5 h-8 bg-blue-600 rounded-full"></span>
+                            Postgraduate Supervision
+                        </h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="flex items-center p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow gap-5">
+                                <div class="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center text-blue-300 text-xl flex-shrink-0">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Yansong Zhang</h4>
+                                    <p class="text-xs text-gray-500 mt-1">2026 T1 - Present</p>
+                                    <p class="text-xs text-gray-400">University of New South Wales</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow gap-5">
+                                <div class="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center text-blue-300 text-xl flex-shrink-0">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Zimeng Chen</h4>
+                                    <p class="text-xs text-gray-500 mt-1">2026 T1 - Present</p>
+                                    <p class="text-xs text-gray-400">University of New South Wales</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+            <div id="experience" class="tab-content">
+                <div class="space-y-8">
+                    <section>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                            <span class="w-1.5 h-8 bg-blue-600 rounded-full"></span>
+                            Experience
+                        </h2>
+                        <div class="mb-8">
+                            <a href="CV_en.pdf" target="_blank" 
+                               class="inline-flex items-center gap-2 px-5 py-2 bg-white text-blue-600 border border-gray-100 rounded-xl text-sm font-semibold shadow-sm hover:bg-blue-600 hover:text-white hover:border-blue-600 hover:shadow-md transition-all duration-300">
+                                <i class="fa-solid fa-file-pdf text-base"></i>
+                                <span>Full CV</span>
+                            </a>
+                        </div>
+
+                        <div class="relative wrap overflow-hidden p-0 h-full">
+                            <div class="absolute border-gray-100 h-full border left-1/2 hidden md:block"></div>
+
+                            <div class="mb-6 flex justify-between items-center w-full md:flex-row-reverse">
+                                <div class="order-1 md:w-5/12"></div>
+                                <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-3 h-3 rounded-full hidden md:flex border-2 border-white"></div>
+                                <div class="order-1 md:w-5/12">
+                                    <div class="text-xs font-bold text-blue-600 tabular-nums mb-1 ml-1 text-right">2025.04 - Present</div>
+                                    <div class="bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow p-4">
+                                        <h4 class="font-bold text-gray-900 text-base leading-tight">University of New South Wales</h4>
+                                        <p class="text-gray-500 text-[11px] mt-0.5">School of Electrical Engineering and Telecommunications</p>
+                                        <p class="text-blue-600 text-xs font-bold mt-1">Postdoctoral Fellow</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-6 flex justify-between items-center w-full md:flex-row-reverse">
+                                <div class="order-1 md:w-5/12"></div>
+                                <div class="z-20 flex items-center order-1 bg-gray-300 shadow-xl w-3 h-3 rounded-full hidden md:flex border-2 border-white"></div>
+                                <div class="order-1 md:w-5/12 text-right">
+                                    <div class="text-xs font-medium text-gray-400 tabular-nums mb-1 mr-1 text-right">2023.11 - 2025.01</div>
+                                    <div class="bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow p-4 text-left">
+                                        <h4 class="font-bold text-gray-900 text-base leading-tight">Macquarie University</h4>
+                                        <p class="text-gray-500 text-[11px] mt-0.5">Department of Linguistics</p>
+                                        <p class="text-blue-600 text-xs font-bold mt-1">Research Assistant</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-6 flex justify-between items-center w-full">
+                                <div class="order-1 md:w-5/12"></div>
+                                <div class="z-20 flex items-center order-1 bg-gray-300 shadow-xl w-3 h-3 rounded-full hidden md:flex border-2 border-white"></div>
+                                <div class="order-1 md:w-5/12">
+                                    <div class="text-xs font-medium text-gray-400 tabular-nums mb-1 ml-1">2021.07 - 2025.06</div>
+                                    <div class="bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow p-4">
+                                        <h4 class="font-bold text-gray-900 text-base">University of New South Wales</h4>
+                                        <p class="text-gray-500 text-[11px] mt-0.5">School of Electrical Engineering and Telecommunications</p>
+                                        <p class="text-blue-600 text-xs font-bold mt-1">PhD Student</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-6 flex justify-between items-center w-full md:flex-row-reverse">
+                                <div class="order-1 md:w-5/12"></div>
+                                <div class="z-20 flex items-center order-1 bg-yellow-400 shadow-xl w-3 h-3 rounded-full hidden md:flex border-2 border-white"></div>
+                                <div class="order-1 md:w-5/12 text-right">
+                                    <div class="text-xs font-medium text-gray-400 tabular-nums mb-1 mr-1">2018.06 - 2021.08</div>
+                                    <div class="bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow p-4 text-left">
+                                        <h4 class="font-bold text-gray-900 text-base">Meituan</h4>
+                                        <p class="text-gray-500 text-[11px] mt-0.5">Ride-Hailing Business Unit</p>
+                                        <p class="text-blue-600 text-xs font-bold mt-1">Algorithm Engineer</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-6 flex justify-between items-center w-full md:flex-row-reverse">
+                                <div class="order-1 md:w-5/12"></div>
+                                <div class="z-20 flex items-center order-1 bg-blue-400 shadow-xl w-3 h-3 rounded-full hidden md:flex border-2 border-white"></div>
+                                <div class="order-1 md:w-5/12">
+                                    <div class="text-xs font-medium text-gray-400 tabular-nums mb-1 ml-1 text-right">2015.07 - 2018.06</div>
+                                    <div class="bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow p-4">
+                                        <h4 class="font-bold text-gray-900 text-base leading-tight">Aviation Industry Corporation of China</h4>
+                                        <p class="text-gray-500 text-[11px] mt-0.5">Radar and Electronic Equipment Research Institute</p>
+                                        <p class="text-blue-600 text-xs font-bold mt-1">Researcher</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-6 flex justify-between items-center w-full">
+                                <div class="order-1 md:w-5/12"></div>
+                                <div class="z-20 flex items-center order-1 bg-gray-300 shadow-xl w-3 h-3 rounded-full hidden md:flex border-2 border-white"></div>
+                                <div class="order-1 md:w-5/12">
+                                    <div class="text-xs font-medium text-gray-400 tabular-nums mb-1 ml-1">2012.09 - 2015.06</div>
+                                    <div class="bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow p-4">
+                                        <h4 class="font-bold text-gray-900 text-base">Fudan University</h4>
+                                        <p class="text-gray-500 text-[11px] mt-0.5">School of Information Science and Engineering</p>
+                                        <p class="text-blue-600 text-xs font-bold mt-1">M.Eng.Sc. Student</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-6 flex justify-between items-center w-full">
+                                <div class="order-1 md:w-5/12"></div>
+                                <div class="z-20 flex items-center order-1 bg-gray-300 shadow-xl w-3 h-3 rounded-full hidden md:flex border-2 border-white"></div>
+                                <div class="order-1 md:w-5/12">
+                                    <div class="text-xs font-medium text-gray-400 tabular-nums mb-1 ml-1">2008.09 - 2012.06</div>
+                                    <div class="bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow p-4">
+                                        <h4 class="font-bold text-gray-900 text-base">Beijing Institute of Technology</h4>
+                                        <p class="text-gray-500 text-[11px] mt-0.5">School of Information and Electronics</p>
+                                        <p class="text-blue-600 text-xs font-bold mt-1">B.Eng. Student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                            <span class="w-1.5 h-8 bg-blue-600 rounded-full"></span>
+                            Awards
+                        </h2>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                                <p class="text-sm font-bold text-gray-900 leading-snug">Second Prize in MERLIon CCS Challenge</p>
+                                <p class="text-xs text-gray-500 mt-0.5">INTERSPEECH, 2023</p>
+                            </div>
+                            <div class="p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                                <p class="text-sm font-bold text-gray-900 leading-snug">Australian Government Research Training Program (RTP) Scholarship</p>
+                                <p class="text-xs text-gray-500 mt-0.5">University of New South Wales, 2021</p>
+                            </div>
+                            <div class="p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                                <p class="text-sm font-bold text-gray-900 leading-snug">Project Star of Ride-Hailing Business Unit</p>
+                                <p class="text-xs text-gray-500 mt-0.5">Meituan, 2020</p>
+                            </div>
+                            <div class="p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                                <p class="text-sm font-bold text-gray-900 leading-snug">Second Prize of Fudan University Doctoral Forum</p>
+                                <p class="text-xs text-gray-500 mt-0.5">Fudan University, 2014</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-20 border-t border-gray-100 bg-white py-6 w-full">
+        <div class="max-w-3xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-sm text-gray-500 font-light">
+                © 2026 Zheng NAN. All rights reserved.
+            </div>
+            
+            <div class="flex items-center gap-5">
+                <a href="https://www.linkedin.com/in/zheng-nan-6a306551/" target="_blank" class="text-gray-400 hover:text-blue-700 transition-colors">
+                    <i class="fa-brands fa-linkedin text-base"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=iuyHfXEAAAAJ&hl=en" target="_blank" class="text-gray-400 hover:text-blue-600 transition-colors">
+                    <i class="fa-brands fa-google-scholar text-base"></i>
+                </a>
+                <a href="mailto:zheng.nan@unsw.edu.au" class="text-gray-400 hover:text-red-500 transition-colors">
+                    <i class="fa-solid fa-envelope text-base"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            const contents = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < contents.length; i++) {
+                contents[i].style.display = "none";
+                contents[i].classList.remove("active");
+            }
+            const links = document.getElementsByClassName("nav-button");
+            for (let i = 0; i < links.length; i++) {
+                links[i].classList.remove("active");
+            }
+            const currentTab = document.getElementById(tabName);
+            currentTab.style.display = "block";
+            setTimeout(() => { currentTab.classList.add("active"); }, 10);
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
 </body>
 </html>
