@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zheng NAN | Home</title>
+    <meta name="description" content="Zheng Nan is a Postdoctoral Fellow at UNSW researching machine learning, speech signal processing, and sequence modeling.">
+    <meta name="theme-color" content="#2563eb">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -18,14 +20,14 @@
 </head>
 
 
-<body class="py-10 px-4 flex flex-col min-h-screen">
+<body class="py-6 sm:py-10 px-4 flex flex-col min-h-screen">
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         <div class="md:col-span-1">
             <div class="sticky top-10 text-center md:text-left">
                 <img src="profile.jpg" 
                      alt="Zheng NAN" 
                      style="object-position: center 18%;" 
-                     class="w-full aspect-square rounded-2xl mx-auto md:mx-0 shadow-sm border border-gray-100 mb-6 object-cover">
+                     class="w-48 sm:w-full aspect-square rounded-3xl mx-auto md:mx-0 shadow-sm border border-gray-100 mb-6 object-cover">
 
                 <h1 class="text-3xl font-bold text-gray-900">Zheng NAN</h1>
                 <p class="text-blue-600 font-medium mt-2 text-sm">Postdoctoral Fellow,</p>
@@ -34,7 +36,8 @@
                 
                 <div class="mt-6 space-y-3 text-sm text-gray-600">
                     <div class="flex items-center gap-3 justify-center md:justify-start">
-                        <i class="fa-solid fa-envelope w-4"></i> zheng.nan@unsw.edu.au
+                        <i class="fa-solid fa-envelope w-4" aria-hidden="true"></i>
+                        <a href="mailto:zheng.nan@unsw.edu.au" class="hover:text-blue-600 transition-colors">zheng.nan@unsw.edu.au</a>
                     </div>
                     <div class="flex items-center gap-3 justify-center md:justify-start">
                         <i class="fa-solid fa-location-dot w-4"></i> Room 447, EE&T Building (G17), UNSW Sydney 2052 
@@ -42,11 +45,11 @@
                 </div>
 
                 <div class="mt-6 pt-6 border-t border-gray-100 flex items-center gap-4 justify-center md:justify-start">
-                    <a href="https://www.linkedin.com/in/zheng-nan-6a306551/" target="_blank" 
+                    <a href="https://www.linkedin.com/in/zheng-nan-6a306551/" target="_blank" rel="noopener noreferrer"
                        class="text-gray-400 hover:text-blue-700 transition-colors text-xl" title="LinkedIn">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
-                    <a href="https://scholar.google.com/citations?user=iuyHfXEAAAAJ&hl=en" target="_blank" 
+                    <a href="https://scholar.google.com/citations?hl=en&user=iuyHfXEAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer"
                        class="text-gray-400 hover:text-blue-600 transition-colors text-xl" title="Google Scholar">
                         <i class="fa-brands fa-google-scholar"></i>
                     </a>
@@ -55,7 +58,7 @@
         </div>
 
         <div class="md:col-span-3">
-            <nav class="flex space-x-8 border-b border-gray-200 mb-8 overflow-x-auto">
+            <nav class="flex space-x-8 border-b border-gray-200 mb-8 overflow-x-auto" aria-label="Main navigation">
                 <button onclick="openTab(event, 'bio')" class="nav-button nav-link active pb-3 px-1 whitespace-nowrap">Bio</button>
                 <button onclick="openTab(event, 'research')" class="nav-button nav-link pb-3 px-1 whitespace-nowrap">Research</button>
                 <button onclick="openTab(event, 'publications')" class="nav-button nav-link pb-3 px-1 whitespace-nowrap">Publications</button>
@@ -73,8 +76,7 @@
                             About Me
                         </h2>
                         <div class="prose prose-blue text-gray-600 max-w-none leading-relaxed space-y-6">
-                            <p>I am currently a Postdoctoral Fellow at the School of Electrical Engineering and Telecommunications, UNSW Sydney. My professional background spans both academia and industry. Prior to my PhD, I worked as a Researcher at the Radar and Electronic Equipment Research Institute, AVIC, Beijing, and as an Algorithm Engineer in the Ride-hailing Business Unit of Meituan, Beijing.</p>
-                            <p>With a solid background in signal processing and machine learning, I have applied my expertise to a range of engineering problems. My recent research focuses on machine learning, (speech) signal processing, and sequence modeling.</p>
+                            <p>Machine learning researcher and engineer with 8+ years of experience across industry and academia, specializing in signal processing, machine learning, generative AI, and optimization. Experienced in developing and deploying machine learning solutions for large-scale ride-hailing operations, speech technology, and signal processing systems.</p>
                         </div>
                     </section>
 
@@ -103,7 +105,7 @@
                                         <span class="text-sm font-medium text-gray-400 tabular-nums whitespace-nowrap mt-1">2012.09 - 2015.06</span>
                                     </div>
                                     <p class="text-gray-600 font-medium">M.Eng.Sc. in Communication and Information Systems</p>
-                                    <p class="text-sm text-gray-500 mt-1">Under supervision of <a href="http://www.it.fudan.edu.cn/Data/View/1052" target="_blank" class="text-blue-500 hover:underline">Prof. Xin Wang</a></p>
+                                    <p class="text-sm text-gray-500 mt-1">Under supervision of <a href="https://fit.fudan.edu.cn/Data/View/1052" target="_blank" class="text-blue-500 hover:underline">Prof. Xin Wang</a></p>
                                 </div>
                             </div>
                             <div class="flex items-start p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
@@ -186,13 +188,19 @@
 
             <div id="publications" class="tab-content">
                 <h2 class="text-2xl font-bold mb-4">Publications</h2>
-                <p class="mb-6">For a more up-to-date list of publications, see <a href="https://scholar.google.com/citations?user=iuyHfXEAAAAJ&hl=en" target="_blank" class="text-blue-500 hover:underline">Google Scholar</a>.</p>
+                <p class="mb-6">For a more up-to-date list of publications, see <a href="https://scholar.google.com/citations?hl=en&user=iuyHfXEAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="text-blue-500 hover:underline">Google Scholar</a>.</p>
 
                 <div class="space-y-6">
                     <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                        <p class="text-gray-900 font-semibold text-lg">AusKidTalk: developing transcription guidelines for continuous Australian English child speech</p>
-                        <p class="text-sm text-gray-600 mt-1">T. Szalay, <b>Z. Nan</b>, R. Huang, M. Shahin, T. Sirojan, K. Ballard, & B. Ahmed</p>
-                        <p class="text-sm italic text-blue-600 mt-1">Language Resources and Evaluation Conference (LREC), 2026</p>
+                        <p class="text-gray-900 font-semibold text-lg">SpeechBench: a unified speech annotation and analysis tool</p>
+                        <p class="text-sm text-gray-600 mt-1"><b>Z. Nan</b>, T. Sirojan, M. Shahin, T. Szalay, V. Sethu, & B. Ahmed</p>
+                        <p class="text-sm italic text-blue-600 mt-1">INTERSPEECH, 2026</p>
+                    </div>
+
+                    <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-900 font-semibold text-lg">AusKidTalk: developing an orthographic annotation workflow for a speech corpus of Australian English-speaking children</p>
+                        <p class="text-sm text-gray-600 mt-1">T. Szalay, M. Shahin, T. Sirojan, <b>Z. Nan</b>, R. Huang, J. Arciuli, E. Baker, F. Cox, K. Ballard, & B. Ahmed</p>
+                        <p class="text-sm italic text-blue-600 mt-1">Language Resources and Evaluation, vol. 60, no. 53, pp. 1–35, July 2026</p>
                     </div>
 
                     <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
@@ -205,12 +213,6 @@
                         <p class="text-gray-900 font-semibold text-lg">Underwater diver communication system based on speech/text conversion</p>
                         <p class="text-sm text-gray-600 mt-1">Y. Rong, P. Chen, & <b>Z. Nan</b></p>
                         <p class="text-sm italic text-blue-600 mt-1">IEEE OCEANS, 2025</p>
-                    </div>
-
-                    <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                        <p class="text-gray-900 font-semibold text-lg">AusKidTalk: developing an orthographic annotation workflow for a speech corpus of Australian English-speaking children</p>
-                        <p class="text-sm text-gray-600 mt-1">T. O. Szalay, M. Shahin, T. Sirojan, <b>Z. Nan</b>, R. Huang, J. Arciuli, E. Baker, F. Cox, K. J. Ballard, & B. Ahmed</p>
-                        <p class="text-sm italic text-gray-500 mt-1">Available at SSRN 5020250</p>
                     </div>
 
                     <div class="p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
@@ -370,7 +372,7 @@
                         <div class="space-y-4">
                             <div class="p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                                 <p class="text-sm font-bold text-gray-900 leading-snug">Research Thesis</p>
-                                <p class="text-xs text-gray-500 mt-0.5">ELEC4951, ELEC4955, ELEC4953</p>
+                                <p class="text-xs text-gray-500 mt-0.5">ELEC4951, ELEC4952, ELEC4953</p>
                             </div>
                             <div class="p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                                 <p class="text-sm font-bold text-gray-900 leading-snug">Masters Project</p>
@@ -393,7 +395,7 @@
                             Experience
                         </h2>
                         <div class="mb-8">
-                            <a href="CV_en.pdf" target="_blank" 
+                            <a href="CV_en.pdf" target="_blank" rel="noopener noreferrer"
                                class="inline-flex items-center gap-2 px-5 py-2 bg-white text-blue-600 border border-gray-100 rounded-xl text-sm font-semibold shadow-sm hover:bg-blue-600 hover:text-white hover:border-blue-600 hover:shadow-md transition-all duration-300">
                                 <i class="fa-solid fa-file-pdf text-base"></i>
                                 <span>Full CV</span>
@@ -528,14 +530,14 @@
     <footer class="mt-20 border-t border-gray-100 bg-white py-6 w-full">
         <div class="max-w-3xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="text-sm text-gray-500 font-light">
-                © 2026 Zheng NAN. All rights reserved.
+                © <span id="current-year">2026</span> Zheng NAN. All rights reserved.
             </div>
             
             <div class="flex items-center gap-5">
-                <a href="https://www.linkedin.com/in/zheng-nan-6a306551/" target="_blank" class="text-gray-400 hover:text-blue-700 transition-colors">
+                <a href="https://www.linkedin.com/in/zheng-nan-6a306551/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-700 transition-colors">
                     <i class="fa-brands fa-linkedin text-base"></i>
                 </a>
-                <a href="https://scholar.google.com/citations?user=iuyHfXEAAAAJ&hl=en" target="_blank" class="text-gray-400 hover:text-blue-600 transition-colors">
+                <a href="https://scholar.google.com/citations?user=iuyHfXEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-600 transition-colors">
                     <i class="fa-brands fa-google-scholar text-base"></i>
                 </a>
                 <a href="mailto:zheng.nan@unsw.edu.au" class="text-gray-400 hover:text-red-500 transition-colors">
@@ -546,7 +548,7 @@
     </footer>
 
     <script>
-        function openTab(evt, tabName) {
+        function openTab(evt, tabName, updateUrl = true) {
             const contents = document.getElementsByClassName("tab-content");
             for (let i = 0; i < contents.length; i++) {
                 contents[i].style.display = "none";
@@ -555,12 +557,23 @@
             const links = document.getElementsByClassName("nav-button");
             for (let i = 0; i < links.length; i++) {
                 links[i].classList.remove("active");
+                links[i].setAttribute("aria-selected", "false");
             }
             const currentTab = document.getElementById(tabName);
             currentTab.style.display = "block";
             setTimeout(() => { currentTab.classList.add("active"); }, 10);
             evt.currentTarget.classList.add("active");
+            evt.currentTarget.setAttribute("aria-selected", "true");
+            if (updateUrl) history.replaceState(null, "", `#${tabName}`);
         }
+
+        const initialTab = window.location.hash.slice(1);
+        const validTabs = ["bio", "research", "publications", "people", "teaching", "experience"];
+        if (validTabs.includes(initialTab)) {
+            const button = document.querySelector(`[onclick*="'${initialTab}'"]`);
+            if (button) openTab({ currentTarget: button }, initialTab, false);
+        }
+        document.getElementById("current-year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
